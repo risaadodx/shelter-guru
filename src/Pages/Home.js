@@ -1,7 +1,12 @@
 import React from "react";
+import Spinner from "../Components/Spinner/Spinner";
 
 const Home = () => {
-  return <>this is home</>;
+  return (
+    <>
+      <Spinner></Spinner>
+    </>
+  );
 };
 
 export default Home;
