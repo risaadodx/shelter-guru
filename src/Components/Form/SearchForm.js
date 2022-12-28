@@ -78,7 +78,7 @@ const SearchForm = () => {
         <div className="mt-6 md:mt-0 md:ml-3">
           <PrimaryButton
             type="submit"
-            classes="w-full px-4 py-2 tracking-wide transition-colors duration-300 transform rounded-md"
+            classes="w-full px-4 py-2 tracking-wide transition-colors duration-300 transform rounded-full"
           >
             Search
           </PrimaryButton>
