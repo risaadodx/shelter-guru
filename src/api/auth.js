@@ -3,7 +3,7 @@ export const setAuthToken = (user) => {
     email: user.email,
   };
   // save user in db & get token
-  fetch(`${process.env.REACT_APP_API_URL}/user/${user?.email}`, {
+  fetch(`http://localhost:5000/user/${user?.email}`, {
     method: "PUT",
     headers: {
       "content-type": "application/json",
@@ -13,7 +13,7 @@ export const setAuthToken = (user) => {
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
-      //save token in loacl storage
+      //save token in local storage
       localStorage.setItem("shelterguru-token", data.token);
     });
 };
