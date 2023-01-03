@@ -10,6 +10,7 @@ import Details from "../Pages/Shared/Details";
 import SearchResult from "../Pages/SearchResult";
 import PrivateRoute from "./PrivateRoute";
 import Checkout from "../Pages/Checkout";
+import DashboardLayout from "../Layout/DashboardLayout";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
         ),
       },
     ],
+  },
+  {
+    path: "/dashboard",
+    element: <DashboardLayout />,
   },
 ]);
 
