@@ -1,7 +1,4 @@
-import {
-  ClipboardDocumentCheckIcon,
-  UserCircleIcon,
-} from "@heroicons/react/24/solid";
+import { FingerPrintIcon, UserPlusIcon } from "@heroicons/react/24/solid";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
@@ -16,7 +13,7 @@ const UserMenu = () => {
           }`
         }
       >
-        <ClipboardDocumentCheckIcon className="w-5 h-5" />
+        <FingerPrintIcon className="w-5 h-5" />
 
         <span className="mx-4 font-medium">My Bookings</span>
       </NavLink>
@@ -29,7 +26,7 @@ const UserMenu = () => {
           }`
         }
       >
-        <UserCircleIcon className="w-5 h-5" />
+        <UserPlusIcon className="w-5 h-5" />
 
         <span className="mx-4 font-medium">Become A Host</span>
       </NavLink>
