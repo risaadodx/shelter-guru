@@ -75,7 +75,9 @@ const HomeDetails = ({ homeData }) => {
             <UserIcon />
           </div>
           <div className="flex-grow prose sm:text-left prose-md">
-            <p className="text-gray-500 text-xl">Atik is a Super host</p>
+            <p className="text-gray-500 text-xl">
+              {homeData?.host?.name} is a Super host
+            </p>
             <p className="text-gray-400">
               Super hosts are experienced, highly rated hosts who are committed
               to providing great stays for guests.
