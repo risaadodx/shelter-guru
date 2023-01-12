@@ -4,6 +4,7 @@ export const addHome = async (homeData) => {
     method: "POST",
     headers: {
       "content-type": "application/json",
+      authorization: `Bearer ${localStorage.getItem("shelterguru-token")}`,
     },
     body: JSON.stringify(homeData),
   });
@@ -25,6 +26,7 @@ export const getHomes = async (email) => {
     method: "GET",
     headers: {
       "content-type": "application/json",
+      authorization: `Bearer ${localStorage.getItem("shelterguru-token")}`,
     },
   });
   const data = await response.json();
@@ -37,6 +39,7 @@ export const updateHome = async (homeData) => {
     method: "PUT",
     headers: {
       "content-type": "application/json",
+      authorization: `Bearer ${localStorage.getItem("shelterguru-token")}`,
     },
     body: JSON.stringify(homeData),
   });
@@ -51,8 +54,18 @@ export const deleteHome = async (id) => {
     method: "DELETE",
     headers: {
       "content-type": "application/json",
+      authorization: `Bearer ${localStorage.getItem("shelterguru-token")}`,
     },
   });
   const result = await response.json();
   return result;
+};
+
+// Search Result
+export const getSearchResult = async (location, from, to, total_guest) => {
+  const response = await fetch(
+    `http://localhost:5000/search-result?location=${location}&from=${from}&to=${to}&total_guest=${total_guest}`
+  );
+  const data = await response.json();
+  return data;
 };
