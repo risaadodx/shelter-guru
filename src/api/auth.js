@@ -17,3 +17,15 @@ export const setAuthToken = (user) => {
       localStorage.setItem("shelterguru-token", data.token);
     });
 };
+
+export const saveBooking = (bookingData) => {
+  // Post method fetch
+  return fetch("http://localhost:5000/bookings", {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      authorization: `Bearer ${localStorage.getItem("shelterguru-token")}`,
+    },
+    body: JSON.stringify(bookingData),
+  });
+};

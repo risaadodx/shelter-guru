@@ -5,8 +5,12 @@ import CheckoutCart from "../Components/Checkout/CheckoutCart";
 import WhosComing from "../Components/Checkout/WhosComing";
 import { AuthContext } from "../contexts/AuthProvider";
 import { useLocation } from "react-router-dom";
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
+import CheckoutForm from "../Components/Form/CheckoutForm";
 
 const Checkout = () => {
+  const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
   const { user } = useContext(AuthContext);
   const { state: checkoutData } = useLocation();
 
@@ -113,6 +117,11 @@ const Checkout = () => {
                 setBookingData={setBookingData}
                 host={checkoutData?.homeData?.host}
               />
+            </Tab.Panel>
+            <Tab.Panel>
+              <Elements stripe={stripePromise}>
+                <CheckoutForm bookingData={bookingData} />
+              </Elements>
             </Tab.Panel>
           </Tab.Panels>
         </Tab.Group>
