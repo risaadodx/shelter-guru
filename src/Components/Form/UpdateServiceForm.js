@@ -28,7 +28,7 @@ const UpdateServiceForm = ({
                 Location
               </label>
               <input
-                className="w-full px-4 py-3 text-gray-800 border border-green-300 focus:outline-green-500 rounded-md bg-green-50"
+                className="w-full px-4 py-3 text-gray-800 border border-[#32C0C0] focus:outline-[#32C0C0] rounded-md bg-green-50"
                 name="location"
                 value={homeData?.location}
                 onChange={(event) =>
@@ -45,7 +45,7 @@ const UpdateServiceForm = ({
                 Title
               </label>
               <input
-                className="w-full px-4 py-3 text-gray-800 border border-green-300 focus:outline-green-500 rounded-md bg-green-50"
+                className="w-full px-4 py-3 text-gray-800 border border-[#32C0C0] focus:outline-[#32C0C0] rounded-md bg-green-50"
                 name="title"
                 value={homeData?.title}
                 onChange={(event) =>
@@ -91,7 +91,7 @@ const UpdateServiceForm = ({
                   Price
                 </label>
                 <input
-                  className="w-full px-4 py-3 text-gray-800 border border-green-300 focus:outline-green-500 rounded-md bg-green-50"
+                  className="w-full px-4 py-3 text-gray-800 border border-[#32C0C0] focus:outline-[#32C0C0] rounded-md bg-green-50"
                   name="price"
                   value={homeData?.price}
                   onChange={(event) =>
@@ -109,7 +109,7 @@ const UpdateServiceForm = ({
                   Total guest
                 </label>
                 <input
-                  className="w-full px-4 py-3 text-gray-800 border border-green-300 focus:outline-green-500 rounded-md bg-green-50"
+                  className="w-full px-4 py-3 text-gray-800 border border-[#32C0C0] focus:outline-[#32C0C0] rounded-md bg-green-50"
                   name="total_guest"
                   id="guest"
                   value={homeData?.total_guest}
@@ -132,7 +132,7 @@ const UpdateServiceForm = ({
                   Bedrooms
                 </label>
                 <input
-                  className="w-full px-4 py-3 text-gray-800 border border-green-300 focus:outline-green-500 rounded-md bg-green-50"
+                  className="w-full px-4 py-3 text-gray-800 border border-[#32C0C0] focus:outline-[#32C0C0] rounded-md bg-green-50"
                   name="bedrooms"
                   value={homeData?.bedrooms}
                   onChange={(event) =>
@@ -150,7 +150,7 @@ const UpdateServiceForm = ({
                   Bathrooms
                 </label>
                 <input
-                  className="w-full px-4 py-3 text-gray-800 border border-green-300 focus:outline-green-500 rounded-md bg-green-50"
+                  className="w-full px-4 py-3 text-gray-800 border border-[#32C0C0] focus:outline-[#32C0C0] rounded-md bg-green-50"
                   name="bathrooms"
                   value={homeData?.bathrooms}
                   onChange={(event) =>
@@ -167,8 +167,9 @@ const UpdateServiceForm = ({
             <div className="flex space-x-4 items-center">
               <label
                 htmlFor="image"
-                className="p-3 text-center rounded-md cursor-pointer text-gray-500 font-bold border  border-green-600 hover:bg-gradient-to-r hover:from-blue-500 hover:to-green-400 hover:border-white hover:text-white"
+                className="p-1 text-center rounded-md cursor-pointer text-gray-500 font-semibold border  border-[#32C0C0] hover:bg-green-400 hover:border-white hover:text-white"
               >
+                Upload Image
                 <input
                   type="file"
                   onChange={(event) => handleImageUpdate(event.target.files[0])}
@@ -191,14 +192,14 @@ const UpdateServiceForm = ({
                 onChange={(event) =>
                   setHomeData({ ...homeData, description: event.target.value })
                 }
-                className="block rounded-md focus:green-300 w-full h-20 px-4 py-3 text-gray-800 bg-green-50 border border-green-300 focus:outline-green-500 "
+                className="block rounded-md focus:[#32C0C0] w-full h-20 px-4 py-3 text-gray-800 bg-green-50 border border-[#32C0C0] focus:outline-[#32C0C0] "
                 name="description"
               ></textarea>
             </div>
 
             <button
               type="submit"
-              className="block w-full p-3 text-center font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gradient-to-r from-emerald-500 to-lime-500 hover:bg-gray-200 hover:text-gray-700 focus:shadow-outline focus:outline-none"
+              className="block w-full p-3 text-center font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#32C0C0] hover:bg-gray-200 hover:text-gray-700 focus:shadow-outline focus:outline-none"
             >
               {loading ? <SmallSpinner /> : " Update"}
             </button>

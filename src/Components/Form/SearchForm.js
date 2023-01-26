@@ -28,7 +28,7 @@ const SearchForm = () => {
     <div className="w-full  mx-auto">
       <form
         onSubmit={handleSubmit}
-        className="mt-6 flex flex-col md:flex-row items-center lg:border-2 rounded-full lg:px-5 py-2"
+        className="mt-6 flex flex-col md:flex-row items-center bg-white lg:border-2 rounded-lg md:rounded-full lg:px-5 py-2"
       >
         <div className="lg:w-1/2 flex flex-col md:items-center md:flex-row">
           <label
@@ -44,7 +44,7 @@ const SearchForm = () => {
             name="location"
             required
             placeholder="Add city, Landmark or address"
-            className="block w-full mt-1 p-1 text-gray-700 bg-white   focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40"
+            className="block w-full mt-1 p-1 text-gray-700 bg-white   focus:border-green-400 focus:ring-[#32C0C0] focus:outline-none focus:ring focus:ring-opacity-40"
           />
         </div>
 

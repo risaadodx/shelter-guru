@@ -115,7 +115,7 @@ const HomeDetails = ({ homeData }) => {
       <div>
         <p className="text-xl text-gray-900">Reviews</p>
         <div className="flex gap-1 mb-2">
-          <StarIcon className="h4 w-4 text-green-500" />{" "}
+          <StarIcon className="h4 w-4 text-[#32C0C0]" />{" "}
           <span>
             <span>4.8 (43 reviews)</span>
           </span>

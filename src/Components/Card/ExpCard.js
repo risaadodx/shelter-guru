@@ -23,11 +23,11 @@ const ExpCard = ({ exp }) => {
         </h2>
         <p className="mt-1">${exp.price} per person</p>
         <div className="flex mt-1">
-          <StarIcon className="h3 w-3 text-green-500" />
-          <StarIcon className="h3 w-3 text-green-500" />
-          <StarIcon className="h3 w-3 text-green-500" />
-          <StarIcon className="h3 w-3 text-green-500" />
-          <StarIcon className="h3 w-3 text-green-500" />{" "}
+          <StarIcon className="h3 w-3 text-[#32C0C0]" />
+          <StarIcon className="h3 w-3 text-[#32C0C0]" />
+          <StarIcon className="h3 w-3 text-[#32C0C0]" />
+          <StarIcon className="h3 w-3 text-[#32C0C0]" />
+          <StarIcon className="h3 w-3 text-[#32C0C0]" />{" "}
           <span>{exp.ratings}</span>
         </div>
       </div>

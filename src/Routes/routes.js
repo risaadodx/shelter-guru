@@ -52,7 +52,7 @@ const router = createBrowserRouter([
         path: "/service-details/:id",
         element: <Details />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/home/${params.id}`),
+          fetch(`https://shelter-guru-server-new.vercel.app/home/${params.id}`),
       },
       {
         path: "/service-details",

@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className=" mx-auto flex flex-wrap py-5 px-20 flex-col md:flex-row items-center">
         <Link
           to="/"
-          className="flex title-font font-medium items-center text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-lime-500 mb-4 md:mb-0"
+          className="flex title-font font-medium items-center text-transparent bg-clip-text bg-[#32C0C0] mb-4 md:mb-0"
         >
           <span className="ml-3 text-2xl font-bold ">Shelter Guru</span>
         </Link>
@@ -88,7 +88,7 @@ const Navbar = () => {
             </>
           ) : (
             <>
-              <Link to="/login" className="mr-5 hover:text-green-600">
+              <Link to="/login" className="mr-5 hover:text-[#32C0C0]">
                 Login
               </Link>
               <Link to="/signup" className="mr-5">

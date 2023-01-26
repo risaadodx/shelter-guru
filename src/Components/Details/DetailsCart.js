@@ -29,7 +29,7 @@ const DetailsCart = ({ homeData }) => {
         ${homeData.price}/ <span className="font-thin">night</span>
       </h1>
       <div className="flex gap-1 mb-2">
-        <StarIcon className="h4 w-4 text-green-500" />{" "}
+        <StarIcon className="h4 w-4 text-[#32C0C0]" />{" "}
         <span>4.8 (43 reviews)</span>
       </div>
 

@@ -6,7 +6,7 @@ const Payment = ({ handleBooking }) => {
       <h1 className="text-2xl font-bold">Payment Selection</h1>
 
       <textarea
-        className="border block my-5 p-2"
+        className="border block my-5  p-2"
         placeholder="Insert your payment credentials here!"
         name=""
         id=""
@@ -15,7 +15,7 @@ const Payment = ({ handleBooking }) => {
       ></textarea>
 
       <button
-        className="py-2 px-4 rounded-md hover:text-gray-100  bg-green-500 hover:bg-green-700 text-white"
+        className="py-2 px-4 rounded-md hover:text-gray-100  bg-[#32C0C0] hover:bg-black text-white"
         onClick={handleBooking}
       >
         Pay

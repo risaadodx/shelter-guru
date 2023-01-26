@@ -7,7 +7,7 @@ const CheckoutCart = ({ homeData }) => {
   let total = sub_total + 21 + 10;
 
   return (
-    <div className="px-6 py-5 md:w-1/2 lg:w-1/3 w-full h-full rounded-md shadow-lg">
+    <div className="px-6 py-5 md:w-1/2 lg:w-1/3 w-full h-full rounded-md shadow-lg bg-white">
       <div className="flex justify-between">
         <div className="text-gray-900 text-xl title-font font-medium mb-2 w-1/2">
           {homeData?.title}
@@ -24,7 +24,7 @@ const CheckoutCart = ({ homeData }) => {
         </Link>
       </div>
       <div className="flex gap-1 mb-2">
-        <StarIcon className="h4 w-4 text-green-500" />{" "}
+        <StarIcon className="h4 w-4 text-[#32C0C0]" />{" "}
         <span>4.8 (10 reviews)</span>
       </div>
 

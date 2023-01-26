@@ -37,17 +37,17 @@ const Sidebar = ({ role, loading }) => {
       </div>
       {/* Sidebar */}
       <div
-        className={`z-10 md:fixed flex flex-col justify-between overflow-x-hidden bg-gray-100 w-64 space-y-6 px-2 py-4 absolute inset-y-0 left-0 transform ${
+        className={`z-10 md:fixed flex flex-col justify-between overflow-x-hidden bg-white shadow-xl w-64 space-y-6 px-2 py-4 absolute inset-y-0 left-0 transform ${
           isActive && "-translate-x-full"
         }  md:translate-x-0  transition duration-200 ease-in-out`}
       >
         <div>
           {/* Branding & Profile Info */}
           <div>
-            <h2 className="text-3xl cursor-pointer font-semibold text-center text-gray-800 ">
+            <h2 className="text-3xl cursor-pointer font-semibold text-center text-[#32C0C0] ">
               <Link to="/"> Shelter Guru</Link>
             </h2>
-            <div className="flex flex-col items-center mt-6 -mx-2">
+            <div className="flex flex-col items-center mt-16 -mx-2">
               <Link to="/dashboard">
                 <img
                   className="object-cover w-24 h-24 mx-2 rounded-full"
@@ -57,18 +57,18 @@ const Sidebar = ({ role, loading }) => {
                 />
               </Link>
               <Link to="/dashboard">
-                <h4 className="mx-2 mt-2 font-medium text-gray-800  hover:underline">
+                <h4 className="mx-2 mt-2 font-bold text-lg text-gray-800  hover:underline">
                   {user?.displayName}
                 </h4>
               </Link>
               <Link to="/dashboard">
-                <p className="mx-2 mt-1 text-sm font-medium text-gray-600  hover:underline">
+                <p className="mx-2 mt-1 text-sm font-medium text-gray-400  hover:underline">
                   {user?.email}
                 </p>
               </Link>
             </div>
           </div>
-
+          <hr className="mt-5" />
           {/* Nav Items */}
           <div className="flex flex-col justify-between flex-1 mt-6">
             <nav>

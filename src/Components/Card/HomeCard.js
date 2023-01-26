@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const HomeCard = ({ home }) => {
   return (
-    <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+    <div className=" p-4 w-full bg-white rounded-lg">
       <Link
         to={`/service-details/${home?._id}`}
         className="block relative h-48 rounded overflow-hidden"
@@ -24,11 +24,11 @@ const HomeCard = ({ home }) => {
         </h2>
         <p className="mt-1">${home?.price} per person</p>
         <div className="flex mt-1">
-          <StarIcon className="h3 w-3 text-green-500" />
-          <StarIcon className="h3 w-3 text-green-500" />
-          <StarIcon className="h3 w-3 text-green-500" />
-          <StarIcon className="h3 w-3 text-green-500" />
-          <StarIcon className="h3 w-3 text-green-500" /> <span>64</span>
+          <StarIcon className="h3 w-3 text-[#32C0C0]" />
+          <StarIcon className="h3 w-3 text-[#32C0C0]" />
+          <StarIcon className="h3 w-3 text-[#32C0C0]" />
+          <StarIcon className="h3 w-3 text-[#32C0C0]" />
+          <StarIcon className="h3 w-3 text-[#32C0C0]" /> <span>64</span>
         </div>
       </div>
     </div>

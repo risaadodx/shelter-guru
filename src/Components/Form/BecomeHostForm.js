@@ -14,7 +14,7 @@ const BecomeHostForm = ({ handleSubmit }) => {
                 Location
               </label>
               <input
-                className="w-full px-4 py-3 text-gray-800 border border-green-300 focus:outline-green-500 rounded-md bg-green-50"
+                className="w-full px-4 py-3 text-gray-800 border border-[#32C0C0] focus:outline-[#32C0C0] rounded-md bg-green-50"
                 name="location"
                 id="location"
                 type="text"
@@ -28,7 +28,7 @@ const BecomeHostForm = ({ handleSubmit }) => {
             <div className="flex space-x-4 items-center">
               <label
                 htmlFor="image"
-                className="px-3 text-center rounded-md cursor-pointer text-gray-500  border  border-green-600 hover:bg-green-500 hover:text-white"
+                className="px-3 text-center rounded-md cursor-pointer text-gray-500  border  border-[#32C0C0] hover:bg-[#32C0C0] hover:text-white"
               >
                 Select
                 <input
@@ -52,7 +52,7 @@ const BecomeHostForm = ({ handleSubmit }) => {
 
             <button
               type="submit"
-              className="block w-full p-3 text-center font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-green-500  hover:bg-gray-200 hover:text-gray-700 focus:shadow-outline focus:outline-none"
+              className="block w-full p-3 text-center font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#32C0C0]  hover:bg-gray-200 hover:text-gray-700 focus:shadow-outline focus:outline-none"
             >
               Submit Request
             </button>

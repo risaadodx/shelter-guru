@@ -39,7 +39,7 @@ const WhosComing = ({
         rows="10"
       ></textarea>
       <button
-        className="py-2 px-4 rounded-md hover:text-gray-100 bg-green-500 hover:bg-green-700 text-white"
+        className="py-2 px-4 rounded-md hover:text-gray-100 bg-[#32C0C0] hover:bg-black text-white"
         onClick={() => setSelectedIndex(2)}
       >
         Continue

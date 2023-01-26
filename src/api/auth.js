@@ -3,7 +3,7 @@ export const setAuthToken = (user) => {
     email: user.email,
   };
   // save user in db & get token
-  fetch(`http://localhost:5000/user/${user?.email}`, {
+  fetch(`https://shelter-guru-server-new.vercel.app/user/${user?.email}`, {
     method: "PUT",
     headers: {
       "content-type": "application/json",
@@ -20,7 +20,7 @@ export const setAuthToken = (user) => {
 
 export const saveBooking = (bookingData) => {
   // Post method fetch
-  return fetch("http://localhost:5000/bookings", {
+  return fetch("https://shelter-guru-server-new.vercel.app/bookings", {
     method: "POST",
     headers: {
       "content-type": "application/json",

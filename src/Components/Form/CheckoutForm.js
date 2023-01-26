@@ -101,7 +101,7 @@ const CheckoutForm = ({ bookingData }) => {
           }}
         />
         <button
-          className=" mt-4 bg-gradient-to-r from-emerald-500 to-lime-500 rounded-md text-white px-4 py-1"
+          className=" mt-4 bg-[#32C0C0] rounded-md text-white px-4 py-1"
           type="submit"
           disabled={!stripe || !clientSecret || processing}
         >
